@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quasy | Projects – Web Development Practice Work</title>
+  <meta name="description" content="Browse and search the web development practice projects of Khwezi, built with HTML, CSS, Flexbox and Grid.">
+  <meta name="keywords" content="web development projects, HTML project, CSS project, Flexbox, CSS Grid, student portfolio">
+  <meta name="author" content="Khwezi">
+  <link rel="canonical" href="https://khweziqakosha105.github.io/WEDE-PART-2/projects.html">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/lightbox.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Quasy</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>My Projects</h1>
+      </div>
+    </section>
+
+    <section class="projects-grid-section">
+      <div class="container search-bar">
+        <label for="project-search" class="visually-hidden">Search projects</label>
+        <input type="search" id="project-search" placeholder="Search projects (e.g. CSS, grid, layout)">
+        <p id="project-count" aria-live="polite"></p>
+      </div>
+      <div class="container projects-grid">
+        <article class="card project-card">
+          <img src="images/html-layout-practice-project.jpg" alt="Screenshot of Project One, a simple website practising HTML structure and page layout">
+          <h2>Project One</h2>
+          <p>A simple website built to practise HTML structure and page layout.</p>
+        </article>
+        <article class="card project-card">
+          <img src="images/css-responsive-design-project.jpg" alt="Screenshot of Project Two, a website practising CSS styling and responsive design">
+          <h2>Project Two</h2>
+          <p>A small project used to practise CSS styling and responsive design.</p>
+        </article>
+        <article class="card project-card">
+          <img src="images/flexbox-grid-layout-project.jpg" alt="Screenshot of Project Three, a website practising Flexbox and Grid layout">
+          <h2>Project Three</h2>
+          <p>A practice project focused on layout using Flexbox and Grid.</p>
+        </article>
+      </div>
+      <p class="container no-results" id="no-results" hidden>No projects match your search.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Khwezi. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
